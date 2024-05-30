@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <title>Cédric Dubois | Morpheme</title>
+    <title>Cédric Dubois | LAM</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,15 +38,16 @@
 
         <h1>Cédric Dubois</h1> 
         
-        
-        Ph.D. candidate @ <a href="https://team.inria.fr/morpheme/">Morpheme</a>
+        Post-Doc @<a href="https://www.lam.fr/">LAM</a>
+        <br>
+        Ph.D. @ <a href="https://team.inria.fr/morpheme/">Morpheme</a>
         <br>
         
-        <a href="./assets/pdf/DUBOIS_cedric_CV.pdf">See my resume (english)</a>
+        <a href="./assets/pdf/CV_webpage.pdf">See my resume (french)</a>
         
         <br>
         
-        contact : cedric.dubois__at__inria.fr
+        e-mail : cedric.dubois[whatever]lam.fr
 
 
       </header>
@@ -54,23 +55,38 @@
 
       <h2 id="about-me">About Me</h2>
 
-<p style="text-align:justify">I am a Ph.D. candidate in image processing for marine ecology, under the supervision of <a href="https://www.i3s.unice.fr/~debreuve/">Éric Debreuve</a>, in collaboration with <a href="https://www.obs-vlfr.fr/~irisson/">Jean-Olivier Irisson</a> (<a href="https://lov.imev-mer.fr/web/team-complex/"> COMPLEx team </a>) in the <a href="https://team.inria.fr/morpheme/">Morpheme team</a>.</a></b>
+<p style="text-align:justify">I am a Post-Doc researcher at <a href="https://www.lam.fr/">LAM</a>, working on <b>data processing in astronomy</b> (model based and learning approches).
+    <br>
+    I did a PhD in <b>image processing</b> and <b>machine learning</b> for marine ecology, in the <a href="https://team.inria.fr/morpheme/">Morpheme</a> team (<a href="https://www.inria.fr/fr/centre-inria-universite-cote-azur">Inria</a>, <a href="https://www.i3s.unice.fr/fr/">I3S</a>, <a href="https://univ-cotedazur.fr/">UCA</a>), under the supervision of <a href="https://www.i3s.unice.fr/~debreuve/">Éric Debreuve</a> and in collaboration with <a href="https://www.obs-vlfr.fr/~irisson/">Jean-Olivier Irisson</a> (<a href="https://lov.imev-mer.fr/web/team-complex/"> COMPLEx team </a>).</a></b>
   <br>
-  My research is focused on supervised classification with applications on plankton images. I also worked on the estimation of the volume of Copepods from 2-dimensionnal images during the first part of my Ph.D.
-  <br>
-  I also have interests in Astronomy due to my past experiences.
-  <br>
+<!--  <br>-->
+<!--  I also have interests in Astronomy due to my past experiences.-->
+<!--  <br>-->
 </p>
 
+<h2 id="current-projects">Current Projects</h2>
+<ul>
+    <h4> Main :
+<strong>HPC data reduction and component separation with <a href="https://mission.lam.fr/concerto/"> CONCERTO </a> (Line Intensity Mapping instruement).</h4>
+    
+  <h4> Side : </h4>
+  <li><strong>Turbo Sliding Frank-Wolfe with <a href="https://www-sop.inria.fr/members/Bastien.Laville/">Bastien Laville</a> : </strong> developping an efficient SFW algorithm for off-the-grid reconstruction with JAX to handle large-scale astronomical data.<br>
+      Astronomical motivation with <a href="https://github.com/WilfriedMercier"> Wilfried Mercier</a> : automatic clumps detection in local ultra-clumpy galaxies (JWST images). </li>
+  <li><strong>SICCK : Simple Image Classification with CNN and K-NN : [TBA]</li>
+<!--      a user friendly image classification framework capitalizing on pre-trained CNNs features extraction and efficient K-NN : Develpping a fast and easy-to-use library for image classificattion thanks to availables CNN features extractors and an efficient K-NN implementation for large scale data </strong> .</li>-->
+</ul>
 
 <h2 id="research-interests">Research Interests</h2>
 
 <ul>
-  <li><strong>Supervised classification : </strong> Interpretable models, Non-Parametric, Kernel methods. </li>
-  <li><strong>Marine Ecology : </strong> Copepods volume estimations, <i> in situ </i> Plankton imaging(<a href="https://ecotaxa.obs-vlfr.fr/"> EcoTaxa </a>). </li>
+    <li><strong> Component separation : </strong>Disentangle multiple observed sources based on their physical properties</li>
+  <li><strong> Precise PSF interpolation : </strong>Estimating a continuus measure of a PSF from its (grid) observation </li>
+<li><strong> Efficient processing with JAX: </strong> mainly for SFW and componant separation </li>
+  <li><strong>Supervised classification : </strong> Interpretable models, Non-Parametric, Kernel methods, Neural Networks. Efficient W-K-NN package : <a href="https://gitlab.inria.fr/cedubois/w-k-nn"> W-K-NN</a></li>
   <li><strong>Galaxies formation and evolution : </strong> Hyper-Spectral imaging (<a href="https://www.eso.org/sci/facilities/develop/instruments/muse.html"> MUSE </a>),
    Morphology and Kinematics (<a href="http://galpak3d.univ-lyon1.fr/"> GalPak3D </a>),
-  SED fitting (<a href="https://www.cfht.hawaii.edu/~arnouts/LEPHARE/lephare.html"> LePhare </a>).</li>
+  SED fitting (<a href="https://www.cfht.hawaii.edu/~arnouts/LEPHARE/lephare.html"> LePhare </a>)</li>
+  <li><strong>Marine Ecology : </strong> Copepods volume estimations, <i> in situ </i> Plankton imaging(<a href="https://ecotaxa.obs-vlfr.fr/"> EcoTaxa </a>) </li>
 </ul>
 
 
@@ -147,41 +163,29 @@
     </li>
   </ul>
   
-
-<h2 id="python-package">KLIMT: <i>KerneL based on Intuitive Multivariate Transformation</i> </h2>
-  
-  KLIMT is a python package, still under developpement, that propose a fast and easily tunable non-parametric method of non-linear supervised classification.
-  The current version is based on the GRETSI2022 publication and an improved version will be soon proposed. 
-  <br>
-  The method proposes a kernel of known transformation, designed for classification.
-  <br>
+  <h2 id="python-package">W-K-NN: <i> Efficient Weighted-K-Nearest-Neighbours for large image datasets</i> </h2>
+  Implementation capitalizing on KeOps <a href="https://www.kernel-operations.io/keops/python/"> KeOps</a> : <a href="https://gitlab.inria.fr/cedubois/w-k-nn"> W-K-NN</a>
+  <a class="image"><img src="https://gitlab.inria.fr/cedubois/w-k-nn/-/raw/main/gamma_gif.gif" width="600" alt="An illustration of the KLIMT method with 4 classes" onContextMenu="return false" /></a>
+</ul>
+<h2 id="python-package">[OUTDATED] KLIMT: <i>KerneL based on Intuitive Multivariate Transformation</i> </h2>
   <strong> Visualization of the KLIMT classification as the parameter $\gamma$ increases </strong>
   
   <a class="image"><img src="./assets/img/klimt-4class.gif" width="600" alt="An illustration of the KLIMT method with 4 classes" onContextMenu="return false" /></a>
-
-<!--
-<h2 id="talks">Selection of talks</h2>
-  <ul>
-  <li><strong>New off-the-grid approaches</strong>. June 2022, CANUM. [<a href="assets/pdf/talks/unpublished.pdf">Slides</a>]</li>
-  <li><strong>Off-the-grid covariance-based super-resolution microscopy</strong>. May 2022, International Conference on Acoustics, Speech, & Signal Processing (IEEE ICASSP). [<a href="assets/pdf/talks/ICASSP_2022_slides.pdf">Slides</a>] [<a href="assets/pdf/talks/ICASSP_2022_slides.zip">TeX</a>]</li>
-  <li><strong>Curves reconstruction: an Atomic based Method for Gridless (AMG)</strong>. March 2022, Morpheme seminar.</li>
-  <li><strong>Off-the-grid static and dynamic super-resolution</strong>. December 2021, ANR MicroBlind meeting, Centre International de Rencontres Mathématiques (France). [<a href="assets/pdf/talks/CIRM_Bastien_Laville.pdf">Slides</a>] [<a href="assets/pdf/talks/CIRM_Bastien_Laville.zip">TeX</a>]</li>
 </ul>
 -->
 
 <h2 id="services">Services</h2>
 
 <ul>
-  <li><strong>Statistic</strong> </li>
-  <li><strong>Programmation</strong> Python</li>
-  <li><strong>Digital transmission chain</strong> (<i>Chaine de transmission numerique</i>) </li>
+  <li><strong>Statistic MAM3 Polytech, Nice</strong> </li>
+  <li><strong>Programmation</strong> Python IUT, Nice</li>
+  <li><strong>Digital transmission chain</strong> (<i>Chaine de transmission numerique</i>) IUT, Nice </li>
 </ul>
 
 
       <br>
 
-      <p><small>2022 (C) - <a href="https://www-sop.inria.fr/">Inria</a></small></p>
-
+<!--      <p><small>2024 (C) - </small></p>-->
       </section>
       <footer>
         <div class="social-icons">
@@ -201,9 +205,11 @@
           
 <!--           <a href="https://scholar.google.com/scholar?hl=fr&as_sdt=0%2C5&q=bastien+laville" target="_blank" alt="Google Scholar">
             <i class="ai ai-google-scholar" style="font-size:1.6rem"></i> -->
-          </a>
-          
+<!--          </a>-->
+        <br>
+        <br>
         </div>
+        Original template : <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> and <a href="https://www-sop.inria.fr/members/Bastien.Laville/">Bastien Laville</a>
         <br>
         <br>
         <br>
